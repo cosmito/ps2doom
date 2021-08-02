@@ -829,8 +829,7 @@ void G_Ticker (void)
 // Called by the game initialization functions.
 //
 void G_InitPlayer (int player)
-{
-    player_t*	p;
+{    
 
     // set up the saved info
     p = &players[player];
