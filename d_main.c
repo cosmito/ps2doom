@@ -1233,7 +1233,7 @@ void IdentifyVersionAndSelect (void)        // cosmito
                 break;
             }
 
-            gsKit_vsync();
+            gsKit_vsync_wait();
             if(timeout != 0)
                 timeout--;
         }
