@@ -33,6 +33,12 @@ static const char rcsid[] = "$Id: d_main.c,v 1.8 1997/02/03 22:45:09 b1 Exp $";
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <tamtypes.h>
+#include <sifcmd.h>
+#include <kernel.h>
+#include <stdarg.h>
+#include <debug.h>
+#include <m_menu.h>
 
 /// cosmito
 static char padBuf[256] __attribute__((aligned(64)));
