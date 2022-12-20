@@ -54,7 +54,7 @@ void M_Init (void);
 // does nothing if menu is already up.
 void M_StartControlPanel (void);
 
-
+extern char currentWadName[20];
 
 
 
