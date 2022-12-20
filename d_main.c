@@ -56,7 +56,7 @@ extern int use_hdd;
 extern const char *hdd_wads_folder;
 
 /// cosmito
-extern char		currentWadName[20];
+//extern char		currentWadName[20];
 
 #define R_OK	4
 static int access(char *file, int mode)
