@@ -40,6 +40,9 @@ static const char rcsid[] = "$Id: d_main.c,v 1.8 1997/02/03 22:45:09 b1 Exp $";
 #include <debug.h>
 #include <m_menu.h>
 
+static int X = 0, Y = 0;
+static int MX=80, MY=25;
+
 /// cosmito
 static char padBuf[256] __attribute__((aligned(64)));
 static char actAlign[6];
