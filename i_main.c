@@ -36,18 +36,21 @@ rcsid[] = "$Id: i_main.c,v 1.4 1997/02/03 22:45:10 b1 Exp $";
 #include <sifrpc.h>
 
 //#ifdef PS2HDD
-#include <fileio.h>
-#include <fileXio.h>
+//#include <fileio.h>
+//#include <fileXio.h>
 #include <debug.h>
 #include <libhdd.h>
 #include <libpwroff.h>
-#include <fileXio_rpc.h>
+//#include <fileXio_rpc.h>
 #include <loadfile.h>
 #include <tamtypes.h> 
 #include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <fcntl.h>
+
 #define MAX_PARTITIONS   100
+
 //#endif
 
 //Declare usbd module //
@@ -547,7 +550,7 @@ int main( int argc, char**	argv )
         }
 
         int mountErr = 0;
-        mountErr = fileXioMount( "pfs0:", hdd_path_to_partition, FILEXIO_MOUNT );
+        mountErr = fileXioMount( "pfs0:", hdd_path_to_partition, fileXioMount );
         
         if( mountErr < 0 )
         {
