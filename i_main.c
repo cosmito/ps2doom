@@ -562,7 +562,7 @@ int main( int argc, char**	argv )
     }
 
 
-    SjPCM_Init(1);		// sync mode
+    //SjPCM_Init(1);		// sync mode
 
     printf("SjPCM_Setvol ...\n");
     SjPCM_Setvol(0x3fff);
